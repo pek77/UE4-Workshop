@@ -1,7 +1,7 @@
 FROM ghcr.io/epicgames/unreal-engine:dev-4.27 as builder
 
 # Clone the source code for the example Unreal project from github
-RUN git clone --progress --depth=1 https://github.com/robinsujob/ue-demo-project.git  /tmp/MyFirstPersonProject && mv /tmp/MyFirstPersonProject /tmp/project
+RUN git clone --progress --depth=1 https://github.com/pek77/ue-demo-project.git  /tmp/MyFirstPersonProject && mv /tmp/MyFirstPersonProject /tmp/project
 
 # Package the example Unreal project
 RUN /home/ue4/UnrealEngine/Engine/Build/BatchFiles/RunUAT.sh BuildCookRun \
